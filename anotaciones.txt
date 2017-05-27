@@ -1,0 +1,8 @@
+controlador tiene alcance privado
+Secciones de pagina = controlador
+filtro = formato de dato
+servicio --> permite compartir datos en varios controladores
+scope --> entiendase como el objeto que tendrá propiedades y metodos en el
+          controlador que lo define
+var / const --> variables globales finalizan al destruir objeto
+let --> variable local (no consume muchos recursos)

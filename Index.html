@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="tienda">
+<head>
+	<title>Clase 2 AngularJS</title>
+	<script  src="angular.min.js"></script>
+	<script  src="app.js"></script>
+</head>
+<body>
+
+<!--
+<input type="text" ng-model="nombre">
+<input type="text" ng-model="appat">
+
+<h1>Hola {{nombre | uppercase}} {{appat}}</h1>
+
+{{5+5}}
+-->
+
+<section ng-controller="saludo">
+	<input type="text"  ng-model="nombre">
+	<h1>Hola {{ nombre | uppercase }}</h1>
+</section>
+
+
+<section ng-controller="productos">
+	<input type="number" ng-model="prod1"><br>
+	<input type="number" ng-model="prod2"><br>
+	<button ng-click="sumar()">Sumar</button><br>
+	El total es {{ total | currency:"S/ "}}
+
+</body>
+</html>
